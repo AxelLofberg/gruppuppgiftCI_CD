@@ -16,3 +16,4 @@ WORKDIR /app/bin/Release/net8.0
 
 # Ange entrypoint för att köra applikationen
 CMD ["dotnet", "gruppuppgiftCI_CD.dll"]
+
