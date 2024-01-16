@@ -16,3 +16,18 @@ namespace PersonligVerifiering.Tests
             // Then
             Assert.True(resultat);
         }
+
+[Fact]
+        public void Validera_OgiltigtPersonnummer_ReturnerarFalse()
+        {
+            // Given
+            string personnummer = "9003994855";
+
+            // When
+            bool resultat = PersonligInfoValidator.Validera(personnummer);
+
+            // Then
+            Assert.False(resultat);
+        }
+    }
+}
