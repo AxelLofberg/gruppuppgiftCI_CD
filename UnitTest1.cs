@@ -1,22 +1,18 @@
 using Xunit;
-using SimpleCalculator;
 
-namespace SimpleCalculator.Tests
+namespace PersonligVerifiering.Tests
 {
-    public class UnitTest1
+    public class PersonligInfoValidatorTests
     {
         [Fact]
-        public void Add_TwoNumbers_ReturnsSum()
+        public void Validera_GiltigtPersonnummer_ReturnerarTrue()
         {
-            // Arrange
-            double num1 = 5;
-            double num2 = 7;
+            // Given
+            string personnummer = "8808214855";
 
-            // Act
-            double result = Calculator.Add(num1, num2);
+            // When
+            bool resultat = PersonligInfoValidator.Validera(personnummer);
 
-            // Assert
-            Assert.Equal(12, result);
+            // Then
+            Assert.True(resultat);
         }
-    }
-}
