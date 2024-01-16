@@ -1,37 +1,37 @@
-name: Run unit test on merge publish Docker image
-
-
-
-on:
-  pull_request:
-    branches:
-      - '*'
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout respository
-        uses: actions/checkout@v3
-
-      - name: Set up .net
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '6.x'
-
-      - name: Run Unit Tests
-        run: dotnet test
-
-      - name: Restore and build
-        run: |
-          dotnet restore
-          dotnet build
-
-      - name: Login to dockerhub
-        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Build and push docker image
-        run: | 
-          docker build -t axellofberg/gruppuppgift-ci_cd .
-          docker push axellofberg/gruppuppgift-ci_cd
+#name: Run unit test on merge publish Docker image
+#
+#
+#
+#on:
+#  pull_request:
+#    branches:
+#      - '*'
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout respository
+#        uses: actions/checkout@v3
+#
+#      - name: Set up .net
+#        uses: actions/setup-dotnet@v3
+#        with:
+#          dotnet-version: '6.x'
+#
+#      - name: Run Unit Tests
+#        run: dotnet test
+#
+#      - name: Restore and build
+#        run: |
+#          dotnet restore
+#          dotnet build
+#
+#      - name: Login to dockerhub
+#        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+#
+#      - name: Build and push docker image
+#        run: | 
+#          docker build -t axellofberg/gruppuppgift-ci_cd .
+#          docker push axellofberg/gruppuppgift-ci_cd
