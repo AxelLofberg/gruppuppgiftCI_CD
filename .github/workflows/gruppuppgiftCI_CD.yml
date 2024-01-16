@@ -5,7 +5,7 @@ name: Run unit test on merge publish Docker image
 on:
   pull_request:
     branches:
-      - main
+      - '*'
 
 jobs:
   build:
@@ -33,5 +33,5 @@ jobs:
 
       - name: Build and push docker image
         run: | 
-          docker build -t <your_docker_username>/<docker_name> .
-          docker push <your_docker_username>/<docker_repository_name>
+          docker build -t axellofberg/gruppuppgift-ci_cd .
+          docker push axellofberg/gruppuppgift-ci_cd
