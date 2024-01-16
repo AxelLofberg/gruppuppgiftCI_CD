@@ -7,4 +7,4 @@ WORKDIR /app
 COPY ./bin/Debug/net8.0/ .
 
 
-CMD ["dotnet", "gruppuppgiftCI_CD.dll"]
+CMD ["dotnet test", "gruppuppgiftCI_CD.dll"]
