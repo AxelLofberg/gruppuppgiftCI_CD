@@ -38,5 +38,10 @@ namespace PersonligVerifiering
 
             return true;
         }
+          public static string HamtaKon(string personnummer)
+        {
+            int sistaSiffror = int.Parse(personnummer.Substring(personnummer.Length - 2));
+            return (sistaSiffror % 2 == 0) ? "Kvinna" : "Man";
+        }
     }
 }
