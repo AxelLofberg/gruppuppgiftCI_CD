@@ -1,9 +1,17 @@
+using System;
+
 namespace PersonligVerifiering
 {
     public static class PersonligInfoValidator
     {
-        public static bool Validera(string personnummer)
+        public static bool Validera(string? personnummer)
         {
+            // Kontrollerar så inte personnummret = null
+            if (personnummer == null)
+            {
+                return false; 
+            }
+
             // Kontrollera om personnumret har rätt längd.
             if (personnummer.Length != 10 && personnummer.Length != 12)
             {
@@ -33,7 +41,6 @@ namespace PersonligVerifiering
                 }
             }
 
-          
             // Ytterligare kontroller för personnummer kan läggas till här.
 
             return true;
