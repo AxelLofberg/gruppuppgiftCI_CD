@@ -4,6 +4,12 @@ namespace PersonligVerifiering
     {
         public static bool Validera(string personnummer)
         {
+            // Kontrollerar så att personnummersinmatningen inte är null
+            if (personnummer == null)
+            {
+                return false;
+            }
+
             // Kontrollera om personnumret har rätt längd.
             if (personnummer.Length != 10 && personnummer.Length != 12)
             {
@@ -33,10 +39,15 @@ namespace PersonligVerifiering
                 }
             }
 
-          
+
             // Ytterligare kontroller för personnummer kan läggas till här.
 
             return true;
+        }
+          public static string HamtaKon(string personnummer)
+        {
+            int sistaSiffror = int.Parse(personnummer.Substring(personnummer.Length - 2));
+            return (sistaSiffror % 2 == 0) ? "Kvinna" : "Man";
         }
     }
 }
