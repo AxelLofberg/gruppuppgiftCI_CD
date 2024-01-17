@@ -6,14 +6,14 @@ namespace PersonligVerifiering
     {
         static void Main()
         {
-            Console.WriteLine("Skriv in ditt personnummer: ");
-            string personnummer = Console.ReadLine();
+            Console.WriteLine("Skriv in ditt personnummer (YYMMDD-XXXX): ");
+            string input = Console.ReadLine() ?? string.Empty;
 
-            if (PersonligInfoValidator.Validera(personnummer))
+            if (PersonligInfoValidator.Validera(input))
             {
                 Console.WriteLine("Personnumret är giltigt.");
 
-                string kon = PersonligInfoValidator.HamtaKon(personnummer);
+                string kon = PersonligInfoValidator.HamtaKon(input);
                 Console.WriteLine($"Kön: {kon}");
             }
             else
