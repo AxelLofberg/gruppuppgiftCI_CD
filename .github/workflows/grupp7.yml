@@ -1,7 +1,6 @@
 name: Run unit test on merge publish Docker image
 
 
-
 on:
   pull_request:
     branches:
