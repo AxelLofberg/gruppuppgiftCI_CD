@@ -1,5 +1,4 @@
-<p align="center"> ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AxelLofberg/gruppuppgiftCI_CD/grupp7.yml) ![action results](https://github.com/AxelLofberg/gruppuppgiftCI_CD/actions/workflows/grupp7.yml/badge.svg)
-</p>
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AxelLofberg/gruppuppgiftCI_CD/grupp7.yml) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/AxelLofberg/gruppuppgiftCI_CD)
 
 <h1 align="center">Personnummerkontrollapplikation</h1>
 
@@ -18,10 +17,6 @@ Besök [dotnet-webbplatsen](https://dotnet.microsoft.com/download) och hämta oc
 ```bash
 git clone https://github.com/AxelLofberg/gruppuppgiftCI_CD.git
 cd gruppuppgiftCI_CD
-
-
-
-
 
 
 
