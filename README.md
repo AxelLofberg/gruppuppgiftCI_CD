@@ -1,4 +1,4 @@
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AxelLofberg/gruppuppgiftCI_CD/grupp7.yml) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/AxelLofberg/gruppuppgiftCI_CD) ![action results](https://github.com/Sed-93/gruppuppgiftCI_CD/actions/workflows/grupp7.yml/badge.svg) 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AxelLofberg/gruppuppgiftCI_CD/grupp7.yml) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/AxelLofberg/gruppuppgiftCI_CD) ![action results](https://github.com/AxelLofberg/gruppuppgiftCI_CD/actions/workflows/grupp7.yml/badge.svg) 
 
 <h1 align="center">Personnummerkontrollapplikation</h1>
 
@@ -49,7 +49,7 @@ För att köra enhetstester, använd följande steg:
     dotnet test
     ```
 
-### Docker
+## Docker
 
 För att köra personnummerkontrollapplikationen i en Docker-container, följ dessa steg:
 
@@ -69,6 +69,18 @@ För att köra personnummerkontrollapplikationen i en Docker-container, följ de
     ```bash
     docker run -it personnummer-app
     ```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
