@@ -69,6 +69,26 @@ För att köra personnummerkontrollapplikationen i en Docker-container, följ de
     ```bash
     docker run -it personnummer-app
     ```
+# Information om svenskt personnummer
+
+Detta projekt ger information om formatet för svenskt personnummer och hur man identifierar kön baserat på den personliga koden.
+
+## Format
+Formatet för svenskt personnummer är ÅÅMMDD-XXXX, där:
+- ÅÅ representerar de två sista siffrorna i födelseåret.
+- MM representerar månaden.
+- DD representerar dagen.
+- XXXX representerar den fyrsiffriga personliga koden.
+
+Det sista tecknet kan vara antingen en kontrollsiffra eller "-".
+
+## Identifiering av kön
+För att avgöra kön kan du titta på den näst sista siffran i den personliga koden (XXXX). Jämna siffror representerar kvinnor, medan udda siffror representerar män.
+
+### Exempel
+- 1234: Kvinna
+- 5679: Man
+
 
 
 
