@@ -4,7 +4,7 @@ name: Run unit test on merge publish Docker image
 on:
   push:
     branches:
-      - samirabranch
+      - '*'
 
 jobs:
   build:
@@ -32,5 +32,5 @@ jobs:
 
       - name: Build and push docker image
         run: | 
-          docker build -t samiraem/gruppuppgift-ci_cd .
-          docker push samiraem/gruppuppgift-ci_cd
+          docker build -t axellofberg/gruppuppgift-ci_cd .
+          docker push axellofberg/gruppuppgift-ci_cd
