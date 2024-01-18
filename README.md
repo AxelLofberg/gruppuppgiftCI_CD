@@ -1,4 +1,30 @@
-## Dokumentation ##
+<p align="center"> ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AxelLofberg/gruppuppgiftCI_CD/grupp7.yml) ![action results](https://github.com/AxelLofberg/gruppuppgiftCI_CD/actions/workflows/grupp7.yml/badge.svg)
+</p>
+
+<h1 align="center">Personnummerkontrollapplikation</h1>
+
+<p align="center">
+  En enkel C#-konsolapplikation för att verifiera giltigheten av svenska personnummer och hämta kön.
+</p>
+
+## Lokal körning och testning
+
+### Steg 1: Installera .NET Core
+
+Besök [dotnet-webbplatsen](https://dotnet.microsoft.com/download) och hämta och installera den senaste versionen av .NET Core passande för ditt operativsystem.
+
+### Steg 2: Klona projektet
+
+```bash
+git clone https://github.com/AxelLofberg/gruppuppgiftCI_CD.git
+cd gruppuppgiftCI_CD
+
+
+
+
+
+
+
 
 Personnummer projekt Github/Docker
 
