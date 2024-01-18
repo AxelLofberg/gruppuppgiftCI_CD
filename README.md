@@ -17,8 +17,37 @@ Besök [dotnet-webbplatsen](https://dotnet.microsoft.com/download) och hämta oc
 ```bash
 git clone https://github.com/AxelLofberg/gruppuppgiftCI_CD.git
 cd gruppuppgiftCI_CD
+```
+## Kör personnummerkontrollapplikationen
 
-### 
+För att köra personnummerkontrollapplikationen, följ dessa steg:
+
+1. Öppna terminalen och navigera till projektets rotmapp:
+
+    ```bash
+    cd gruppuppgiftCI_CD
+    ```
+
+2. Kör applikationen med följande kommando:
+
+    ```bash
+    dotnet run
+    ```
+## Kör enhetstester
+
+För att köra enhetstester, använd följande steg:
+
+1. Öppna terminalen och navigera till testmappens rotmapp:
+
+    ```bash
+    cd gruppuppgiftCI_CD.Tests
+    ```
+
+2. Kör enhetstesterna med följande kommando:
+
+    ```bash
+    dotnet test
+    ```
 
 
 
