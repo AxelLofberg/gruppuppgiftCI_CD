@@ -17,7 +17,7 @@ Besök [dotnet-webbplatsen](https://dotnet.microsoft.com/download) och hämta oc
 ```bash
 git clone https://github.com/AxelLofberg/gruppuppgiftCI_CD.git
 cd gruppuppgiftCI_CD
-
+'
 
 
 
