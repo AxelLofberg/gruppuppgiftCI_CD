@@ -61,14 +61,24 @@ För att köra personnummerkontrollapplikationen i en Docker-container, följ de
 
     ```bash
     cd gruppuppgiftCI_CD
-    docker build -t personnummer-app .
+    docker build -t gruppuppgift-ci_cd .
     ```
 
 3. Kör Docker-container:
 
     ```bash
-    docker run -it personnummer-app
+    docker run -it gruppuppgift-ci_cd
     ```
+
+
+## Om du redan har en Docker Hub-repositorium:
+
+Om du redan har publicerat ditt Docker-image på Docker Hub,kommandon:
+
+```bash
+docker pull axellofberg/gruppuppgift-ci_cd
+docker run -it axellofberg/gruppuppgift-ci_cd
+```
 # Information om svenskt personnummer
 
 Detta projekt ger information om formatet för svenskt personnummer och hur man identifierar kön baserat på den personliga koden.
